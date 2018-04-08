@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".MessageThreads">
+
+    <TextView
+        android:id="@+id/UsernameMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_alignBottom="@+id/imageButtonLogOff"
+        android:layout_alignEnd="@+id/InputTopic"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="12dp"
+        android:text="User Name"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <ImageButton
+        android:id="@+id/imageButtonLogOff"
+        android:layout_width="50dp"
+        android:layout_height="40dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginEnd="13dp"
+        app:srcCompat="@mipmap/ic_launcher_logout" />
+
+    <TextView
+        android:id="@+id/CurrentThreadTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/UsernameMessage"
+        android:text="Current Threads"
+        android:textColor="@android:color/black"
+        android:textSize="18sp" />
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/my_recycler_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/InputTopic"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/CurrentThreadTitle"
+        android:scrollbars="vertical" />
+
+    <EditText
+        android:id="@+id/InputTopic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_alignBottom="@+id/imageButtonAdd"
+        android:layout_alignParentStart="true"
+        android:layout_marginEnd="11dp"
+        android:layout_toStartOf="@+id/imageButtonAdd"
+        android:ems="10"
+        android:inputType="" />
+
+    <ImageButton
+        android:id="@+id/imageButtonAdd"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/imageButtonLogOff"
+        android:layout_marginBottom="18dp"
+        app:srcCompat="@mipmap/ic_launcher_add" />
+
+</RelativeLayout>

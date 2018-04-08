@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="10dp">
+
+    <TextView
+        android:id="@+id/MessageThread"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignBottom="@+id/imageButtonDelete"
+        android:layout_alignTop="@+id/imageButtonDelete"
+        android:layout_toStartOf="@+id/imageButtonDelete"
+        android:text="Group Name" />
+
+    <ImageButton
+        android:id="@+id/imageButtonDelete"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        app:srcCompat="@mipmap/ic_launcher_delete" />
+
+
+
+</RelativeLayout>
